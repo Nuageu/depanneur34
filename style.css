@@ -330,8 +330,20 @@ nav ul li a:hover
 
 .imgServices
 {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+    background-color: #FDF21A;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     text-align: center;
     flex: 1;
+}
+
+.imgServices img
+{
+    background-color: #efefef;
 }
 
 .imgServices ul li
@@ -389,7 +401,7 @@ nav ul li a:hover
     flex: 2;
     text-align: center;
     /* border: 1px solid black; */
-    background-color:whitesmoke;
+    background-color: #efefef;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
@@ -419,9 +431,9 @@ nav ul li a:hover
     flex: 1;
     background-color: #FDF21A;
     border-top-left-radius: 100%;
-    /* border-top-right-radius: 100%; */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
-    border: 0.005px solid black;
+    /* border: 0.005px solid black; */
 }
 
 #imgAbout img
@@ -492,7 +504,7 @@ nav ul li a:hover
 {
     text-align: center;
     font-size: 18px;
-    margin: 20px;
+    margin: 15px;
 }
 
 #Contact
@@ -516,22 +528,20 @@ nav ul li a:hover
     height: 100px;
     width: 500px;
     margin-top: 25px;
-    /* padding: 25px; */
     background-color: #FDF21A;
     color: black;
     text-align: center;
     font-size: 16px;
-    /* border-radius: 99% 0% 100% 100% / 100% 61% 100% 0% ; */
-    /* border-radius: 50% 0% 100% 100% / 100% 0% 100% 0%  ; */
-    /* border-radius: 100% 0% 0% 0% / 100% 0% 100% 0%   ; */
     border-radius: 10px;
-    border-color: 1px solid black;
-    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
 }
 
 .contact h3,i,p
 {
     font-size: 24px;
+    font-weight: 500;
+    color: #001F3F;
     margin-top: 5px;
 }
 
