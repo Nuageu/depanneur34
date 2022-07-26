@@ -29,7 +29,7 @@ main
 {
     position: absolute;
     left: 40px;
-    top: 0;
+    top: 10;
     z-index: 1;
     height: 300px;
 }
@@ -239,6 +239,12 @@ nav ul li a:hover
     margin-bottom: 25px;
 }
 
+#art p
+{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
 #imgBox
 {
     margin-right: 50px;
@@ -309,7 +315,11 @@ nav ul li a:hover
 }
 
 /********************************** Services ***************************************/
-
+#Serv h2
+{
+    margin-top: 25px;
+    text-align: center;
+}
 #Services
 {
     padding-top: 50px;
@@ -322,9 +332,14 @@ nav ul li a:hover
 {
     text-align: center;
     flex: 1;
-    height: 300px;
 }
 
+.imgServices ul li
+{
+    margin-left: 45px;
+    text-align: start;
+    list-style: none;
+}
 .imgServices h2,p
 {
     margin: 10px;
@@ -389,6 +404,11 @@ nav ul li a:hover
 {
     margin-top: 50px;
     margin-bottom: 25px;
+}
+
+#artAbout p
+{
+    font-size: 20px;
 }
 
 #imgAbout
@@ -460,3 +480,64 @@ nav ul li a:hover
         height: 150px;
     }
 }
+
+/*************************************** Contact *************************************/
+#info
+{
+    margin-top: 25px;
+    text-align: center;
+}
+
+#artInfo p
+{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+#Contact
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: bisque; */
+}
+
+#info
+{
+    display: block;
+}
+
+.contact
+{
+    height: 100px;
+    width: 500px;
+    margin-top: 25px;
+    /* padding: 25px; */
+    background-color: #FDF21A;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    /* border-radius: 99% 0% 100% 100% / 100% 61% 100% 0% ; */
+    /* border-radius: 50% 0% 100% 100% / 100% 0% 100% 0%  ; */
+    /* border-radius: 100% 0% 0% 0% / 100% 0% 100% 0%   ; */
+    border-radius: 10px;
+    border-color: 1px solid black;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+}
+
+.contact h3,i,p
+{
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.contact i
+{
+    margin-right: 20px;
+}
+
+
