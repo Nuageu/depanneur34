@@ -211,7 +211,9 @@ nav ul li a:hover
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #FDF21A;
+    /* background-color: #FDF21A; */
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 30%);
     justify-content: center;
     align-items: center;
     height: 400px; 
@@ -255,7 +257,9 @@ nav ul li a:hover
     position: relative;
     height: 90%;
     flex: 1;
-    background-color: #f7e114;
+    /* background-color: #f7e114; */
+    background-color: #fbb034;
+    background-image: linear-gradient(15deg, #fbb034 0%, #ffdd00 104%);
     border-radius: 25px;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     border: 0.005px solid black;
@@ -349,8 +353,10 @@ nav ul li a:hover
 
 .img{
     padding: 10px;
-    background-color: #f7e114;
+    /* background-color: #f7e114; */
     /* box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25); */
+    background-color: #fbb034;
+    background-image: linear-gradient(15deg, #fbb034 0%, #ffdd00 74%);
 }
 
 .imgServices img
@@ -403,7 +409,9 @@ nav ul li a:hover
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #FDF21A;
+    /* background-color: #FDF21A; */
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 30%);
     justify-content: center;
     align-items: center;
     height: 400px; 
@@ -446,7 +454,9 @@ nav ul li a:hover
     position: relative;
     height: 90%;
     flex: 1;
-    background-color: #f7e114;
+    /* background-color: #f7e114; */
+    background-color: #fbb034;
+    background-image: linear-gradient(115deg, #fbb034 0%, #ffdd00 104%);
     border-top-left-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
@@ -545,7 +555,9 @@ nav ul li a:hover
     height: 100px;
     width: 500px;
     margin-top: 25px;
-    background-color: #f7e114;
+    /* background-color: #f7e114; */
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 70%);
     color: black;
     text-align: center;
     font-size: 16px;
