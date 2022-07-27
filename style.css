@@ -10,10 +10,10 @@ body
     font-family: Poppins;
 }
 
-main
+/* main
 {
     background-color: #efefef;
-}
+} */
 /**** Logo Banner ****/
 
 
@@ -47,6 +47,9 @@ h1
     z-index: 1;
     font-size: 50px;
     font-family: Poppins;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
 }
 
 #logoBanner
@@ -55,7 +58,7 @@ h1
     height: 50px;
     width: 100%;
     top:50%;
-    background-color: #FDF21A;
+    background-color: #f7e114;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     border-radius: 5px;
 }
@@ -214,6 +217,7 @@ nav ul li a:hover
     height: 400px; 
     letter-spacing: 1px;
     border-bottom-left-radius: 35%;
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 #art
@@ -251,7 +255,7 @@ nav ul li a:hover
     position: relative;
     height: 90%;
     flex: 1;
-    background-color: #FDF21A;
+    background-color: #f7e114;
     border-radius: 25px;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     border: 0.005px solid black;
@@ -322,9 +326,9 @@ nav ul li a:hover
 }
 #Services
 {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
-    background-color: #efefef;
+    /* background-color: #efefef; */
     display: flex;
 }
 
@@ -332,18 +336,26 @@ nav ul li a:hover
 {
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 20px;
-    padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 10%;
-    background-color: #FDF21A;
-    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+    /* border-radius: 10%; */
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background-color: #efefef;
+    /* box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px; */
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
     text-align: center;
     flex: 1;
 }
 
+.img{
+    padding: 10px;
+    background-color: #f7e114;
+    /* box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25); */
+}
+
 .imgServices img
 {
-    background-color: #efefef;
+    background-color: white;
 }
 
 .imgServices ul li
@@ -397,6 +409,7 @@ nav ul li a:hover
     height: 400px; 
     letter-spacing: 1px;
     border-top-right-radius: 35%;
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 #artAbout
@@ -433,7 +446,7 @@ nav ul li a:hover
     position: relative;
     height: 90%;
     flex: 1;
-    background-color: #FDF21A;
+    background-color: #f7e114;
     border-top-left-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
@@ -532,7 +545,7 @@ nav ul li a:hover
     height: 100px;
     width: 500px;
     margin-top: 25px;
-    background-color: #FDF21A;
+    background-color: #f7e114;
     color: black;
     text-align: center;
     font-size: 16px;
@@ -561,6 +574,7 @@ nav ul li a:hover
 .contact p a:hover i
 {
     color: green;
+    -webkit-text-stroke: 1px white;
     transform: scale(2);
 }
 .contact i
@@ -619,5 +633,180 @@ footer
     .footer ul li
     {
     text-align: center;
+    }
+}
+
+/**************** Carousel **********************/
+
+.mainacceuil
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: 100%;
+    margin-top: 75px;
+
+}
+
+
+.main2
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #EFEFEF;
+    height: 80%;
+    width: 80%;
+    margin-bottom: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0,2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0,2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+}
+
+.article
+{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: var(--green);
+    color: var(--white);
+    font-size: 1.2em;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0,2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0,2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+#h2carou
+{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+    background-color: rgba(18, 4, 1, 0.8);
+    letter-spacing: 1px;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+.image_carou {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image_carou.active{
+    opacity: 1;
+}
+
+
+.article .suivant, .precedent{
+    color: var(--white);
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.suivant{
+    right: 1%;
+    width: 50px;
+    color: #f7e114;
+}
+
+.precedent{
+    left: 1%;
+}
+
+.fa-arrow-circle-left:before,
+.fa-arrow-circle-right:before
+{
+    font-size: 36px;
+    color: yellow;
+}
+
+
+@media (max-width:1250px)
+{
+    .mainacceuil
+    {
+        margin-top: 60px;
+    }
+    #h2carou
+    {
+        font-size: 18px;
+        left: 25%;
+    }
+}
+
+@media (max-width:910px)
+{
+    .mainacceuil
+    {
+        margin-top: 20px;
+    }
+    #h2carou
+    {
+        font-size: 16px;
+        left: 30%;
+    }
+    .article
+    {
+        height: 400px;
+    }
+}
+
+@media (max-width:600px)
+{
+    .mainacceuil
+    {
+        margin-top: 0px;
+    }
+    #h2carou
+    {
+        font-size: 10px;
+        left: 35%;
+    }
+    .article
+    {
+        height: 300px;
+    }
+}
+
+@media (max-width:400px)
+{
+    .mainacceuil
+    {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    #h2carou
+    {
+        padding: 0px;
+        font-size: 10px;
+        left: 40%;
+    }
+    .article
+    {
+        height: 200px;
     }
 }
