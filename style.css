@@ -55,11 +55,13 @@ body
 #logoHeader>img
 {
     position: absolute;
-    left: 35%;
-    top: 50%;
-    height: 50px;
-    width: 600px;
+    left: 30%;
+    height: 70px;
+    width: 700px;
+    top: 40%;
     z-index: 5;
+    transition-duration: 1s;
+    transition-delay: 0s;
 }
 #logoBannerImg
 {
@@ -114,9 +116,10 @@ h1
     }
     #logoHeader>img
     {
-        height: 40px;
-        width: 500px;
-        top: 53%;
+        left: 30%;
+        height: 60px;
+        width: 600px;
+        top: 40%;
     }
 }
 
@@ -135,9 +138,9 @@ h1
     }
     #logoHeader>img
     {
-        height: 40px;
-        width: 400px;
-        top: 50%;
+        height: 50px;
+        width: 500px;
+        top: 40%;
     }
 }
 @media (max-width:800px)
@@ -167,7 +170,7 @@ h1
     }
     #logoBannerImg,#header
     {
-        height: 75px;
+        height: 125px;
     }
     #logoBanner
     {
@@ -188,7 +191,7 @@ h1
     }
     #logoBannerImg,#header
     {
-        height: 50px;
+        height: 75px;
     }
     #logoBanner
     {
