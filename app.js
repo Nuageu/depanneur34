@@ -1,3 +1,5 @@
+
+/********************************Carousel */
 var image_carou = document.getElementsByClassName('image_carou')
 var image_actu = 0;
 
@@ -40,4 +42,16 @@ setInterval(function(){
     }
     enleverActiveImages();
     image_carou[image_actu].classList.add('active');
-},10000)
+}, 10000)
+
+/************** Emergency display phone */
+
+const serviceUrg = document.querySelector('#ServiceUrgence')
+
+window.addEventListener("resize", function() {
+    if (window.innerWidth > 800) serviceUrg.classList.remove("actived");
+  });
+
+  window.addEventListener("resize", function() {
+    if (window.innerWidth < 810) serviceUrg.classList.add("actived");
+  });

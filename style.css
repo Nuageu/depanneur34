@@ -15,8 +15,32 @@ body
     background-color: #efefef;
 } */
 /**** Logo Banner ****/
+#ServiceUrgence 
+{
+    display: none;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 30%);
+}
+#ServiceUrgence.actived{
+    display: block;
+}
+#ServiceUrgence>a
+{
+    color: red;
+    -webkit-text-stroke: 1px white;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 900;
+}
 
-
+#ServiceUrgence>a>.fa
+{
+    font-size: 36px;
+    margin-right: 20px;
+}
 #header
 {
     position: relative;
@@ -211,7 +235,9 @@ nav ul li a:hover
     flex-direction: row;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: 25px;
     /* background-color: #FDF21A; */
+    margin-bottom: 50px;
     background-color: #fbb034;
     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 30%);
     justify-content: center;
@@ -289,6 +315,8 @@ nav ul li a:hover
     {
         flex-direction: column-reverse;
         height: auto; 
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
     #imgBox
     {
@@ -308,6 +336,9 @@ nav ul li a:hover
         margin-left: 30px;
         margin-right: 30px;
     }
+    #art>p{
+        font-size: 16px;
+    }
 }
 
 @media (max-width:600px)
@@ -315,6 +346,9 @@ nav ul li a:hover
     #imgBox img
     {
         height: 200px;
+    }
+    #art>p{
+        font-size: 14px;
     }
 }
 
@@ -329,6 +363,7 @@ nav ul li a:hover
 /********************************** Services ***************************************/
 #Serv>h2
 {
+    font-size: 36px;
     margin-top: 25px;
     text-align: center;
 }
@@ -350,7 +385,7 @@ nav ul li a:hover
     /* border-radius: 10%; */
     /* border-bottom-left-radius: 5%; */
     /* border-bottom-right-radius: 5%; */
-    background-color: #efefef;
+    /* background-color: #efefef; */
     /* box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px; */
     box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -367,8 +402,9 @@ nav ul li a:hover
 
 
 
-.imgServices ul li
+.imgServices>ul>li
 {
+    font-size: 16px;
     margin-left: 45px;
     text-align: start;
     list-style: none;
@@ -386,10 +422,14 @@ nav ul li a:hover
     width: 350px;
 }
 
+@media (max-width:1200px){
+    .voiture {
+        height: 275px;
+        width: 275px;
+    }
+}
 
-
-
-@media (max-width:910px)
+@media (max-width:970px)
 {
     .Services
     {
@@ -398,10 +438,30 @@ nav ul li a:hover
     .imgServices
     {
         margin-top: 25px;
+    }    
+    .imgServices>p
+    {
+        font-size: 14px ;
     }
-    .imgServices ul li
+    .imgServices>ul>li
     {
         text-align: center;
+    }
+    .voiture {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width:610px)
+{
+    .voiture {
+        height: 200px;
+        width: 200px;
+    }
+    .imgServices>ul>li
+    {
+        font-size: 14px;
     }
 }
 
@@ -510,6 +570,10 @@ nav ul li a:hover
         margin-left: 30px;
         margin-right: 30px;
     }
+    #artAbout>p
+    {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:600px)
@@ -517,6 +581,10 @@ nav ul li a:hover
     #imgAbout img
     {
         height: 300px;
+    }
+    #artAbout>p
+    {
+        font-size: 14px;
     }
 }
 
@@ -602,6 +670,23 @@ nav ul li a:hover
     margin-right: 20px;
 }
 
+@media (max-width:910px)
+{
+    #artInfo>p
+    {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px)
+{
+    #artInfo>p
+    {
+        font-size: 14px;
+    }
+}
+
+
 
 /************************* Footer *************************/
 
@@ -664,7 +749,6 @@ footer
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
     max-width: 100%;
     margin-top: 75px;
 
