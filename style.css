@@ -140,7 +140,7 @@ nav
     height: 50px;
 }
 
-nav ul 
+nav>ul 
 {
     display: flex;
     justify-content: center;
@@ -151,7 +151,7 @@ nav ul
 }
 
 
-nav ul li a
+nav>ul>li>a
 {
     font-size: 24px;
     font-family: Poppins;
@@ -241,13 +241,13 @@ nav ul li a:hover
     box-shadow: rgba(149, 157, 165, 1) -5px 8px 24px;
 }
 
-#art h2
+#art>h2
 {
     margin-top: 50px;
     margin-bottom: 25px;
 }
 
-#art p
+#art>p
 {
     font-size: 16px;
     padding-bottom: 15px;
@@ -269,7 +269,7 @@ nav ul li a:hover
     transition-delay: 0s;
 }
 
-#imgBox img
+#imgBox>img
 {
     position: absolute;
     height: 200px;
@@ -327,23 +327,25 @@ nav ul li a:hover
 }
 
 /********************************** Services ***************************************/
-#Serv h2
+#Serv>h2
 {
     margin-top: 25px;
     text-align: center;
 }
 .Services
 {
+    font-size: 16px;
     padding-top: 20px;
     padding-bottom: 50px;
     /* background-color: #efefef; */
     display: flex;
 }
 
+
 .imgServices
 {
     border: 1px solid #e9e9e9;
-    margin: 20px;
+    margin: 10px;
     padding-bottom: 10px;
     /* border-radius: 10%; */
     /* border-bottom-left-radius: 5%; */
@@ -363,10 +365,7 @@ nav ul li a:hover
     background-image: linear-gradient(15deg, #fbb034 0%, #ffdd00 74%);
 }
 
-.imgServices img
-{
-    background-color: white;
-}
+
 
 .imgServices ul li
 {
@@ -381,13 +380,14 @@ nav ul li a:hover
 
 .voiture
 {
-    font-size: 24px;
+    font-size: 16px;
     padding: 10px;
-    border-radius: 50%;
-    border: 10px solid red;
-    height: 100px;
-    width: 100px;
+    height: 350px;
+    width: 350px;
 }
+
+
+
 
 @media (max-width:910px)
 {
@@ -463,7 +463,7 @@ nav ul li a:hover
     /* background-color: #f7e114; */
     background-color: #fbb034;
     background-image: linear-gradient(115deg, #fbb034 0%, #ffdd00 104%);
-    border-top-left-radius: 100%;
+    /* border-top-left-radius: 100%; */
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     /* border: 0.005px solid black; */
@@ -498,7 +498,7 @@ nav ul li a:hover
     }
     #imgAbout img
     {
-        height: 300px;
+        height: 350px;
         position: relative;
         left: auto;
         top: auto;
@@ -516,7 +516,7 @@ nav ul li a:hover
 {
     #imgAbout img
     {
-        height: 200px;
+        height: 300px;
     }
 }
 
@@ -524,7 +524,7 @@ nav ul li a:hover
 {
     #imgAbout img
     {
-        height: 150px;
+        height: 200px;
     }
 }
 
@@ -574,7 +574,7 @@ nav ul li a:hover
     box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
 }
 
-.contact h3,i,p
+.contact>h3, .contact>i, .contact>p
 {
     font-size: 24px;
     font-weight: 500;
@@ -739,8 +739,7 @@ footer
 
 
 .article .suivant, .precedent{
-    color: var(--white);
-    font-size: 8rem;
+    /* font-size: 8rem; */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
