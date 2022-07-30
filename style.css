@@ -726,11 +726,11 @@ nav ul li a:hover
 }
 .contact p a:hover
 {
-    color: green;
+    color: red;
 }
 .contact p a:hover i
 {
-    color: green;
+    color: red;
     -webkit-text-stroke: 1px white;
     transform: scale(2);
 }
@@ -902,7 +902,6 @@ footer
 .suivant{
     right: 1%;
     width: 50px;
-    color: #f7e114;
 }
 
 .precedent{
@@ -913,7 +912,7 @@ footer
 .fa-arrow-circle-right:before
 {
     font-size: 36px;
-    color: yellow;
+    color: #ffdd00;
 }
 
 
