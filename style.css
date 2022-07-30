@@ -3,13 +3,69 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    /* background-color: #292929; */
+    display: grid;
+    margin-left: 20px;
+    place-items: center;
+    max-height: 100vh;
+}
+.swiper
+{
+    width: 80%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0,2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0,2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+}
+
+.image__wrapper
+{
+    width: 100%;
+    position: relative;
+    padding-top: 56.25% ;
+}
+.image__wrapper img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 body
 {
     font-family: Poppins;
+    overflow-x: hidden;
 }
 
+#fixedtop
+{
+    position: fixed;
+    text-align: center;
+    margin: 20px;
+    bottom: 0;
+    right: 0;
+    font-size: 36px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 30%);
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+#fixedtop>a>i
+{
+    color: red;
+    text-decoration: none;
+}
 /* main
 {
     background-color: #efefef;
@@ -572,7 +628,7 @@ nav ul li a:hover
 
 #artAbout p
 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #imgAbout
@@ -660,7 +716,7 @@ nav ul li a:hover
 /*************************************** Contact *************************************/
 #info
 {
-    margin-top: 25px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -690,7 +746,7 @@ nav ul li a:hover
 .contact
 {
     height: 100px;
-    width: 500px;
+    width: 300px;
     margin-top: 25px;
     /* background-color: #f7e114; */
     background-color: #fbb034;
