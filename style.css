@@ -66,17 +66,12 @@ body
     color: red;
     text-decoration: none;
 }
-/* main
-{
-    background-color: #efefef;
-} */
 /**** Logo Banner ****/
 #ServiceUrgence 
 {
     position: fixed;
     display: none;
     top: 0;
-    height: 50px;
     text-align: center;
     width: 100%;
     padding: 10px;
