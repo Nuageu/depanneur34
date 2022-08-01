@@ -57,6 +57,7 @@ body
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    z-index: 10;
     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 30%);
     border: 2px solid rgba(255, 255, 255, 1);
 }
@@ -189,9 +190,9 @@ h1
     }
     #logoHeader>img
     {
-        height: 50px;
+        height: 70px;
         width: 500px;
-        top: 40%;
+        top: 30%;
     }
 }
 @media (max-width:800px)
@@ -205,8 +206,8 @@ h1
     }
     #logoHeader>img
     {
-        height: 40px;
-        width: 350px;
+        height: 70px;
+        width: 500px;
         top: 50%;
     }
 }
@@ -229,9 +230,9 @@ h1
     }
     #logoHeader>img
     {
-        height: 40px;
-        width: 300px;
-        top: 50%;
+        height: 50px;
+        width: 350px;
+        top: 35%;
         left: 30%;
     }
 }
@@ -254,9 +255,9 @@ h1
         top: 10px;
     }
     #logoHeader>img{
-        height: 20px;
-        width: 200px;
-        top: 50%;
+        height: 30px;
+        width: 300px;
+        top: 35%;
         left: 25%;
     }
 }
@@ -740,8 +741,9 @@ nav ul li a:hover
 
 .contact
 {
-    height: 100px;
-    width: 300px;
+    display: grid;
+    height: 130px;
+    width: 400px;
     margin-top: 25px;
     /* background-color: #f7e114; */
     background-color: #fbb034;
@@ -758,7 +760,6 @@ nav ul li a:hover
 {
     font-size: 24px;
     font-weight: 500;
-    color: #001F3F;
     margin-top: 5px;
 }
 
@@ -772,7 +773,10 @@ nav ul li a:hover
 
 .contact p a
 {
-    color: #001F3F;
+    font-family: Poppins;
+    color:blue;
+    font-weight: 900;
+    font-size: 24px;
     text-decoration: none;
 }
 .contact p a:hover
